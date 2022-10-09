@@ -3,6 +3,7 @@ import * as styled from "./styled";
 import { BattleIcon } from "../../assets/icons/icon_battle";
 import { ProfileIcon } from "../../assets/icons/icon_profile";
 import { PokedexIcon } from "../../assets/icons/icon_pokedex";
+import { colors } from "../../styles/colors";
 
 type PropsType = {
   navigate: (path: string) => void;
@@ -14,7 +15,9 @@ export const Header = ({ navigate }: PropsType) => {
   };
 
   const colorIcon = (isActive: boolean) => {
-    return isActive ? "EF4036" : "ffffff";
+    return isActive
+      ? colors.theme.colors["red-500"].value
+      : colors.theme.colors["white"].value;
   };
 
   const [active, SetActive] = useState(0);

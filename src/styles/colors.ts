@@ -8,6 +8,8 @@ export const colors = createStitches({
       "red-100": "#F58C86",
       "red-300": "#F56966",
       "red-500": "#EF4036",
+      "grey-300": "#BBB6B6",
+      "grey-400": "#363636",
     },
   },
 });
