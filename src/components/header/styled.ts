@@ -12,7 +12,7 @@ export const Container = styled("header", {
     display: "inline-flex",
 
     "& button:nth-child(2)": {
-      margin: "0 16px",
+      margin: "0 32px",
     },
   },
 });
@@ -46,5 +46,39 @@ export const Button = styled("button", {
         pointerEvents: "none",
       },
     },
+  },
+});
+
+export const Profile = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "end",
+  position: "absolute",
+  right: "40px",
+
+  p: {
+    textAlign: "right",
+    color: "$white",
+  },
+
+  "& p:nth-child(1)": {
+    fontSize: "14px",
+    lineHeight: "16px",
+    fontWeight: "800",
+  },
+
+  "& p:nth-child(2)": {
+    fontSize: "10px",
+    lineHeight: "16px",
+    fontWeight: "600",
+  },
+
+  "& #header-profile-picture": {
+    width: "40px",
+    aspectRatio: "1",
+    backgroundColor: "$white",
+    borderRadius: "100%",
+    boxShadow: "$sh1",
+    marginLeft: "16px",
   },
 });

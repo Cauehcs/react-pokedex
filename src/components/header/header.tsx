@@ -46,6 +46,13 @@ export const Header = ({ navigate }: PropsType) => {
           <BattleIcon color={colorIcon(isActive(2))} />
         </styled.Button>
       </div>
+      <styled.Profile id="header-profile-info">
+        <div>
+          <p id="header-profile-name">Nome do usuário</p>
+          <p id="header-profile-pokemons">Pokémons capturados: 999</p>
+        </div>
+        <div id="header-profile-picture"></div>
+      </styled.Profile>
     </styled.Container>
   );
 };
