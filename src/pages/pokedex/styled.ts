@@ -3,14 +3,12 @@ import { styled } from "@stitches/react";
 export const Container = styled("main", {
   backgroundColor: "$background",
   display: "inline-flex",
-
   "& > div:nth-child(-n+2)": {
     height: "calc(100vh - 60px)",
   },
 
   "& > div:nth-child(1)": {
     width: "70vw",
-    backgroundColor: "$red-100",
   },
 
   "& > div:nth-child(2)": {
@@ -21,12 +19,30 @@ export const Container = styled("main", {
     alignItems: "center",
     width: "30vw",
     padding: "16px",
-    backgroundColor: "$red-300",
+    paddingBottom: "0px",
 
     input: {
       width: "100%",
       fontSize: "20px",
       lineHeight: "24px",
+    },
+
+    "#sidebar-pokemons": {
+      width: "100%",
+      height: "calc(100vh - 60px - 32px)",
+      overflow: "scroll",
+      marginTop: "16px",
+      display: "grid",
+      gap: "16px",
+      grid: "wrap",
+      justifyContent: "space-between",
+      gridTemplateColumns:
+        "repeat(auto-fit, minmax(min(90%/3, max(123px, 90%/3)), 1fr));",
+      gridAutoRows: "min-content",
+
+      "&::-webkit-scrollbar": {
+        display: "none",
+      },
     },
   },
 });
