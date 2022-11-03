@@ -1,4 +1,5 @@
 import { Pokemon } from "../classes/Pokemon";
+import { Database } from "../services/firebase/db";
 
 export const pokeApiBaseUrl = "https://pokeapi.co/api/v2";
 export const numberOfPokemons = 905;
@@ -22,7 +23,7 @@ export class Pokemons {
       this.fetch();
     }
 
-    console.log(this.listPokemon);
+    const db = new Database();
     return this.listPokemon;
   }
 
@@ -32,6 +33,17 @@ export class Pokemons {
       const jsonPk = await responsePk.json();
 
       if (!this.listPokemon.find((pokemon) => pokemon.getId() === index)) {
+        const db = new Database();
+        db.set(
+          `pokemons/${index}`,
+          new Pokemon({
+            name: jsonPk.name,
+            type: jsonPk.types[0].type.name,
+            id: jsonPk.id,
+            spriteUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${jsonPk.id}.png`,
+          })
+        );
+
         this.listPokemon.push(
           new Pokemon({
             name: jsonPk.name,

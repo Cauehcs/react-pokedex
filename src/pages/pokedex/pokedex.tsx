@@ -18,7 +18,10 @@ export const Pokedex = () => {
   const pokemons: Pokemon[] = Pokemons.getInstance().getList();
 
   const filteredPokemons = pokemons.filter((pokemon) => {
-    return pokemon.getName().toLowerCase().includes(search.toLowerCase());
+    return (
+      pokemon.getName().toLowerCase().includes(search.toLowerCase()) ||
+      pokemon.getId().toString().includes(search)
+    );
   });
 
   return (

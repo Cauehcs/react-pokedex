@@ -10,7 +10,7 @@ export const Container = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-end",
-  justifyContent: "center",
+  justifyContent: "space-between",
   borderRadius: "10px",
   overflow: "hidden",
   userSelect: "none",

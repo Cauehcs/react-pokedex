@@ -5,7 +5,6 @@ import * as styled from "./styles/global";
 import "./styles/colors";
 import "./styles/shadow";
 import App from "./core/App";
-import { Pokemons } from "./data/pokemons";
 
 styled.globalStyles();
 

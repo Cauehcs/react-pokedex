@@ -35,9 +35,9 @@ export const Container = styled("main", {
       display: "grid",
       gap: "16px",
       grid: "wrap",
-      justifyContent: "space-between",
+      justifyContent: "start",
       gridTemplateColumns:
-        "repeat(auto-fit, minmax(min(90%/3, max(123px, 90%/3)), 1fr));",
+        "repeat(auto-fit, minmax(min(90%/3, max(123px, 90%/3)), calc((100% - 32px) / 3)));",
       gridAutoRows: "min-content",
 
       "&::-webkit-scrollbar": {
