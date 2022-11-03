@@ -5,6 +5,7 @@ import { Pokemon } from "../../classes/Pokemon";
 import { getContainerColors } from "../../components/pokedex/pokemonContainer/colorsContainer";
 import { PokemonContainer } from "../../components/pokedex/pokemonContainer/pokemonContainer";
 import { SearchBar } from "../../components/searchBar/searchBar";
+import { Pokemons } from "../../data/pokemons";
 import { colors } from "../../styles/colors";
 import * as styled from "./styled";
 
@@ -14,29 +15,9 @@ export const Pokedex = () => {
 
   const [selectedPokemon, setSelected] = useState(0);
 
-  const pokemons = [
-    new Pokemon({ name: "Bulbasaur", type: "grass", id: 1, spriteUrl: "" }),
-    new Pokemon({ name: "Charmander", type: "fire", id: 4, spriteUrl: "" }),
-    new Pokemon({ name: "Squirtle", type: "water", id: 7, spriteUrl: "" }),
-    new Pokemon({ name: "Bulbasaur", type: "grass", id: 1, spriteUrl: "" }),
-    new Pokemon({ name: "Charmander", type: "fire", id: 4, spriteUrl: "" }),
-    new Pokemon({ name: "Squirtle", type: "water", id: 7, spriteUrl: "" }),
-    new Pokemon({ name: "Bulbasaur", type: "grass", id: 1, spriteUrl: "" }),
-    new Pokemon({ name: "Charmander", type: "fire", id: 4, spriteUrl: "" }),
-    new Pokemon({ name: "Squirtle", type: "water", id: 7, spriteUrl: "" }),
-    new Pokemon({ name: "Bulbasaur", type: "grass", id: 1, spriteUrl: "" }),
-    new Pokemon({ name: "Charmander", type: "fire", id: 4, spriteUrl: "" }),
-    new Pokemon({ name: "Squirtle", type: "water", id: 7, spriteUrl: "" }),
-    new Pokemon({ name: "Bulbasaur", type: "grass", id: 1, spriteUrl: "" }),
-    new Pokemon({ name: "Charmander", type: "fire", id: 4, spriteUrl: "" }),
-    new Pokemon({ name: "Squirtle", type: "water", id: 7, spriteUrl: "" }),
-    new Pokemon({ name: "Bulbasaur", type: "grass", id: 1, spriteUrl: "" }),
-    new Pokemon({ name: "Charmander", type: "fire", id: 4, spriteUrl: "" }),
-    new Pokemon({ name: "Squirtle", type: "water", id: 7, spriteUrl: "" }),
-  ];
+  const pokemons: Pokemon[] = Pokemons.getInstance().getList();
 
   const filteredPokemons = pokemons.filter((pokemon) => {
-    console.log(pokemon.getName().toLowerCase().includes(search.toLowerCase()));
     return pokemon.getName().toLowerCase().includes(search.toLowerCase());
   });
 
