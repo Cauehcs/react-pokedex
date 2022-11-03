@@ -105,6 +105,104 @@ export const Container = styled("div", {
           color: getContainerColors("grass").textColor.toString(),
         },
       },
+      electric: {
+        backgroundColor:
+          getContainerColors("electric").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("electric").textColor.toString(),
+        },
+      },
+      poison: {
+        backgroundColor:
+          getContainerColors("poison").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("poison").textColor.toString(),
+        },
+      },
+      flying: {
+        backgroundColor:
+          getContainerColors("flying").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("flying").textColor.toString(),
+        },
+      },
+      dragon: {
+        backgroundColor:
+          getContainerColors("dragon").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("dragon").textColor.toString(),
+        },
+      },
+      bug: {
+        backgroundColor: getContainerColors("bug").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("bug").textColor.toString(),
+        },
+      },
+      normal: {
+        backgroundColor:
+          getContainerColors("normal").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("normal").textColor.toString(),
+        },
+      },
+      dark: {
+        backgroundColor: getContainerColors("dark").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("dark").textColor.toString(),
+        },
+      },
+      psychic: {
+        backgroundColor:
+          getContainerColors("psychic").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("psychic").textColor.toString(),
+        },
+      },
+      ground: {
+        backgroundColor:
+          getContainerColors("ground").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("ground").textColor.toString(),
+        },
+      },
+      ice: {
+        backgroundColor: getContainerColors("ice").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("ice").textColor.toString(),
+        },
+      },
+      steel: {
+        backgroundColor: getContainerColors("steel").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("steel").textColor.toString(),
+        },
+      },
+      fairy: {
+        backgroundColor: getContainerColors("fairy").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("fairy").textColor.toString(),
+        },
+      },
+      fighting: {
+        backgroundColor:
+          getContainerColors("fighting").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("fighting").textColor.toString(),
+        },
+      },
+      rock: {
+        backgroundColor: getContainerColors("rock").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("rock").textColor.toString(),
+        },
+      },
+      ghost: {
+        backgroundColor: getContainerColors("ghost").backgroundColor.toString(),
+        "h1, p": {
+          color: getContainerColors("ghost").textColor.toString(),
+        },
+      },
     },
   },
 
@@ -131,6 +229,156 @@ export const Container = styled("div", {
     },
     {
       type: "grass",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "electric",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "poison",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "flying",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "dragon",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "bug",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "normal",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "dark",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "psychic",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "ground",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "ice",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "steel",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "fairy",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "fighting",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "rock",
+      selected: true,
+      css: {
+        backgroundColor: "transparent",
+        "h1, p": {
+          color: colors.theme.colors["red-300"].value,
+        },
+      },
+    },
+    {
+      type: "ghost",
       selected: true,
       css: {
         backgroundColor: "transparent",
